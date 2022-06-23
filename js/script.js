@@ -253,7 +253,7 @@ window.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            let statusMessage = document.createElement('div');
+            const statusMessage = document.createElement('div');
             statusMessage.classList.add('status');
             statusMessage.textContent = message.loading;
             form.append(statusMessage);
@@ -277,6 +277,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
 
             console.log(object);
+
             const json = JSON.stringify(object);
 
             request.send(json);
