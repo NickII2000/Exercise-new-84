@@ -263,6 +263,9 @@ window.addEventListener('DOMContentLoaded', () => {
             request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
             const formData = new FormData(form);
 
+            console.log(form);
+            console.log(formData);
+
             const object = {};
             formData.forEach(function (value, key) {
                 object[key] = value;
