@@ -265,11 +265,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
             console.log(form);
             console.log(formData);
+            formData.forEach((item, i, arr) => {
+                console.log(`item = ${item}, i = ${i}, arr = ${arr})`);
+            });
 
             const object = {};
             formData.forEach(function (value, key) {
                 object[key] = value;
             });
+
+            console.log(object);
             const json = JSON.stringify(object);
 
             request.send(json);
