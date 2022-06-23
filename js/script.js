@@ -243,6 +243,8 @@ window.addEventListener('DOMContentLoaded', () => {
         failure: 'Что-то пошло не так...'
     };
 
+    console.log(forms);
+
     forms.forEach(item => {
         postData(item);
     });
