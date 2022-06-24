@@ -279,7 +279,6 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log(object);
 
             const json = JSON.stringify(object);
-
             request.send(json);
 
             request.addEventListener('load', () => {
